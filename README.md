@@ -12,3 +12,25 @@
 
   ### 3. command line clock 
   A strategy that shows the current time in the console, overhauling each moment 
+
+
+
+  ## **class02** 
+
+  the labs methods 
+   ### 1. Rolling Dice
+ it accepts an integer n and rolls a six-sided dice n times. The method should return an array containing the values of the rolls.
+
+ ### 2. Contains Duplicates
+it returns true or false depending on whether the array contains duplicate values.
+
+### 3. Calculating Averages
+it accepts an array of integers and calculates and returns the average of all the values in the array.
+
+### 4. array of arrays 
+it calculate the average value for each array and return the array with the lowest average.
+
+
+
+Test in terminal 
+![Alt text](<run lab02.JPG>)
