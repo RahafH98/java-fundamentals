@@ -34,3 +34,17 @@ it calculate the average value for each array and return the array with the lowe
 
 Test in terminal 
 ![Alt text](<run lab02.JPG>)
+
+
+
+  ## **class03**  
+
+  Methods inside the lab in ***basic library***
+
+1. Maps
+a method to Iterate through all of the data to find the min and max values. Using a HashSet of type Integer to keep track of all the unique temperatures seen. and to  iterate from the min temp to the max temp and create a String containing any temperature not seen during the month. 
+
+2. Tallying Election
+a method that accepts a List of Strings representing votes and returns one string to show what got the most votes.
+
+![Alt text](<lab 03 testing in basic library.JPG>)
