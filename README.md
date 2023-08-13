@@ -48,3 +48,8 @@ a method to Iterate through all of the data to find the min and max values. Usin
 a method that accepts a List of Strings representing votes and returns one string to show what got the most votes.
 
 ![Alt text](<lab 03 testing in basic library.JPG>)
+
+
+3. linter 
+the linter methods reads a JavaScript file with a given Path, and generates an error message whenever it finds a line that doesn’t end in a semi-colon.
+![Alt text](<testing gates.JPG>)
