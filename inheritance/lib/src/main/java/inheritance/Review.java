@@ -1,28 +1,54 @@
 package inheritance;
 
-public class Review {
+class Review {
     private String body;
     private String author;
-    private int stars ;
+    private int stars;
     private Restaurant restaurant;
+    private Shop shop;
+    private Theater theater;
+    private String movie;
 
-    public  Review(String body, String author, int stars, Restaurant restaurant ){
-        this.body =body;
+    public Review(String body, String author, int stars, Restaurant restaurant) {
+        this.body = body;
         this.author = author;
-        if (stars >= 0 && stars<= 5){
-            this.stars= stars;
-        } else {
-           throw new IllegalArgumentException("stars rating must be between 0 and 5 ");
-        }
+        this.stars = stars;
         this.restaurant = restaurant;
-        restaurant.addReview(this);
     }
-    public int getStars(){
+
+    public Review(String body, String author, int stars, Shop shop) {
+        this.body = body;
+        this.author = author;
+        this.stars = stars;
+        this.shop = shop;
+    }
+
+    public Review(String body, String author, int stars, Theater theater, String movie) {
+        this.body = body;
+        this.author = author;
+        this.stars = stars;
+        this.theater = theater;
+        this.movie = movie;
+    }
+
+    public String getBody() {
+        return body;
+    }
+
+    public int getStars() {
         return stars;
     }
 
-    @Override
     public String toString() {
-        return String.format("Review by %s | Stars: %d\n%s", author, stars, body);
+        String reviewInfo = String.format("Author: %s\nStars: %d\n%s", author, stars, body);
+        if (restaurant != null) {
+            return reviewInfo + "\nRestaurant: " + restaurant.getName();
+        } else if (shop != null) {
+            return reviewInfo + "\nShop: " + shop.getName();
+        } else if (theater != null) {
+            return reviewInfo + "\nTheater: " + theater.getName() + "\nMovie: " + movie;
+        }
+        return reviewInfo;
     }
 }
+
