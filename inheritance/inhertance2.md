@@ -2,9 +2,9 @@
 - [Classes](#classes)
 - [Testing](#testing) 
 
-## Overview
+# Project Overview
 
-The project includes three main classes:
+This project includes three main classes:
 - `Shop`: Represents a shop with a name, description, and dollar sign count.
 - `Theater`: Represents a theater with a name and a list of movies.
 - `Review`: Represents a review with a body, author, stars, and the reviewed entity (Shop, Theater, or Restaurant).
