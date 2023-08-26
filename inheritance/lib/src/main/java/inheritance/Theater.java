@@ -3,15 +3,12 @@ package inheritance;
 import java.util.ArrayList;
 import java.util.List;
 
-class Theater {
-    private String name;
+class Theater extends Place {
     private List<String> movies;
-    private List<Review> reviews;
 
     public Theater(String name) {
-        this.name = name;
+        super(name);
         this.movies = new ArrayList<>();
-        this.reviews = new ArrayList<>();
     }
 
     public void addMovie(String movie) {
@@ -22,17 +19,8 @@ class Theater {
         movies.remove(movie);
     }
 
-    public void addReview(Review review) {
-        reviews.add(review);
-    }
-
-    public String getName() {
-        return name;
-    }
-
+    @Override
     public String toString() {
         return String.format("Theater: %s\nMovies: %s", name, movies.toString());
     }
-
-
 }
